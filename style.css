@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+:root{
+    --colorprimary: #8F57fd;
+}
+
+body {
+    background-color: var(--colorprimary);
+    font-family: 'Mulish', sans-serif;
+}
+
+.NavHeader {
+    height: 100px;
+    background-color: var(--colorprimary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavHeader__img {
+    height: auto;
+    width: 200px;
+    margin-left: 1em;
+}
+
+.NavHeader__menu {
+    margin-right: 2em;
+
+    font-size: 16px;
+
+}
+
+.NavHeader__menu ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    text-align: right;
+    margin-right: 2em;
+    padding: 0;
+
+}
+
+.NavHeader__menu ul li {
+    margin-top: 7px;
+
+}
+
+.NavHeader__menu:hover ul,
+ul:hover {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.NavHeader__menu--img {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.main__titulo {
+    color: white;
+    margin-bottom: 0.5em;
+    font-weight:bold;
+    font-size: 28px;
+}
+
+.main__input {
+    width: 65%;
+    border-radius: 20px;
+    padding:10px;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline:none;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.main__input::placeholder {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+  }
